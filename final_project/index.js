@@ -16,7 +16,6 @@ app.use(
     saveUninitialized: true,
   })
 );
-
 app.use("/customer/auth/*", function auth(req, res, next) {
   //Write the authenication mechanism here
   if (req.session.authorization) {
